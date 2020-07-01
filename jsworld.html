@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Welcome EvoWlorld</title>
+		<link rel="stylesheet" media="(min-width: 640px)" href="all_pc.css">
+		<link rel="stylesheet" media="(max-width: 640px)" href="all_smp.css">
+
+		
+		<style type="text/css">
+
+			body{
+				background-image:url(img/bg1.jpg);
+				border-radius: 15px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="pagebody">
+
+			<header>
+				<a href="#open"><img src="1.png" class="tophidden" align="right"></a>
+				<p></p>
+				<h1>Welcome to EvoWorld</h1>
+				<a href="https://www.facebook.com/EveBin"><img src="img/fb.png" height="20px" width="20px"></a>
+				<a href="https://www.instagram.com/"><img src="img/insta.jpg" height="20px" width="20px"></a>
+				<a href="https://twitter.com/"><img src="img/twitter.jpeg" height="20px" width="20px"></a>
+				<a href="https://www.google.com/"><img src="img/g.jpg" height="20px" width="20px"></a>
+				<a href="https://github.com/ShahiNabin"><img src="img/github.jpg" height="20px" width="20px"></a>
+
+				<!--https://dev.to/zedism/6-ways-to-motivate-yourself-to-learn-programming-k02 
+				<div class="b1img"><img src="programmingbanner.jpg" width="570" height="418"></div>
+				-->
+				<ul>
+					<div id="open">
+						<li class="topinline"><a href="index.html">Introduction</a></li>
+						<li class="topinline"><a href="schoollife.html">School life</a></li>
+						<li class="topinline"><a href="hometown.html">Hometown</a></li>
+						<li class="topinline"><a href="timetable.html">Time table</a></li>
+						<li class="topinline" style="width:140px;;"><a href="Japanese.html">Japanese study</a></li>
+						<li class="topinline"><a href="jsworld.html">JSworld</a></li>
+						<li class="tophidden"><a href="#pagebody">CLOSE</a></li>
+					</div>
+				</ul>
+			</header>
+
+			<div class="maincontent">
+				<div class="submenu">
+					<div class="submenubody"><a href="index.html">Introduction</a></div>
+					<div class="submenubody"><a href="schoollife.html">School life</a></div>
+					<div class="submenubody"><a href="hometown.html">Hometown</a></div>
+					<div class="submenubody"><a href="timetable.html">Time table</a></div>
+					<div class="submenubody"><a href="Japanese.html">Japanese study</a></div>
+					<div class="submenubody"><a href="jsworld.html">JSWorld</a></div>
+				</div>
+
+				<div class="content">
+						<h3>Welcome to the world of JavaScript</h3>
+					<form name="form1" action="1.html">
+						<p><b>1. Please Input your fullname.</b></p>
+						<input type="text" name="fname" placeholder="Enter Fullname">
+						<input type="button" name="button" value="Click the button" onclick= printName() />
+						<input type="reset" value="reset"/>
+					</form>
+
+					<form name="form2" action="1.html">
+						<p><b>2. Please Input your gender.</b></p>
+						<input type="radio" name="gender" value="male"> Male
+						<input type="radio" name="gender" value="female"> Female
+						<input type="radio" name="gender" value="others"> Others
+						<input type="button" name="click" value="Choose your gender" onclick="printGender()" />
+						<input type="reset" value="reset"/>
+						</br>
+					</form>
+
+					<form name="form3" action="1.html">
+						<p><b>3. Please Input your language.</b></p>
+						<input type="checkbox" name="language" value="chinese">Chinese
+						<input type="checkbox" name="language" value="Japanese">Japanese
+						<input type="checkbox" name="language" value="English">English
+						<input type="checkbox" name="language" value="nepali">Nepali
+						<input type="button" name="click" value="The language you know" onclick="printLanguage()">
+						<input type="reset" value="reset"/>
+						</br>
+					</form>
+
+					<form name="form4" action="1.html">
+						<p><b>4. The IT courses in KCGI.</b></p>
+						<select name="courses" multiple="multiple">
+							<option value="Web Programming 1">Web Programming 1</option>
+							<option value="Web Programming 2" selected>Web Programming 2</option>
+							<option value="Web Programming 3">Web Programming 3</option>
+							<option value="Object Orinted Programming">Object Orinted Programming</option>
+							<option value="Communication & Technology">Communication & Technology</option>
+							<option value="Mathmetics">Mathmetics</option><br></br>
+							<input type="button" name="click" value="Display the courses" onclick="printCourse()">
+							<input type="reset" value="reset"/>
+						</select>
+					</form>
+
+					<form name="form5" action="1.html">
+						<p><b>5. Select Your Country.</b></p>
+						<select name="country">
+							<option value="Nepal" selected>Nepal</option>
+							<option value="China">China</option>
+							<option value="Japan">Japan</option>
+							<option value="Sri Lanka">Sri Lanka"</option>
+							<option value="Vietnam">Vietnam</option>
+							<option value="Canada">Canada</option><br></br>
+							<input type="button" name="click" value="Submit" onclick="printCountry()">
+							<input type="reset" value="reset"/>
+						</select>
+					</form>
+					<form  name="form6" action="1.html">
+						<p><b>6. Open and close a window.</b></p>
+						<input type="button" value="open the window" onclick="openWindow()">
+						<input type="button" value="clase the window" onclick="closeWindow()">
+						<input type="reset" value="reset"/>
+					</form>
+						<p><b>7. Please select your favorite color.</b></p>
+
+					<form name="choosecolor" action="1.html" method="get">
+						<input type="radio" name="color" value="red">red
+						<input type="radio" name="color" value="yellow">yellow
+						<input type="radio" name="color" value="blue">blue
+						<input type="button" value="submit" onclick="changeColor()" /> 
+						<input type="reset" value="reset"/>
+					</form>
+
+					<p><b>7. Please hover mouse over photo.</b></p>
+					<img src="img/japan1.jpg" onmouseover="this.src='img/japan2.jpg'" onmouseout="this.src='img/japan1.jpg'" height="300px" width="550px">
+
+					</br>
+					<p><b>7. Press on click me button to hide photo.</b></p>
+					<button onclick="showHide()">Click Me</button>
+
+						<div id="myDIV">
+						 <img src="img/japan3.jpg" height="300px" width="550px">
+						</div>
+
+					<p><b>9. Change Picture.</b></p>
+						<button onclick="document.getElementById('myImage').src='img/japan.jpg'">Japan</button>
+						<button onclick="document.getElementById('myImage').src='img/nepal.jpg'">Nepal</button>
+						<button onclick="document.getElementById('myImage').src='img/china.jpg'">China</button>
+						<button onclick="document.getElementById('myImage').src='img/srilanka.jpg'">Sri Lanka</button>
+
+							<br><img id="myImage" src="img/nepal.jpg" width="550px" height="350px">
+
+				</div>
+			</div>
+		
+		<footer>Copyright (C) 2016 copyrights. KCGI.All Rights Reserved.</footer>
+	</div>
+
+	<script>
+
+		function printName(form1){
+						var n = document.form1.fname.value;
+						alert("Hello Mr./Ms. "+n); 
+					}
+
+		function printGender(form2){
+						for(var i=0; i<document.form2.gender.length; i++){
+							if(document.form2.gender[i].checked){
+								alert("You are "+document.form2.gender[i].value);
+								return;
+					  		}
+				 		}
+					}
+		function printLanguage(form3){
+						var s = "";
+						for(var i=0; i<document.form3.language.length; i++){
+							if(document.form3.language[i].checked){
+								if (s !="") {
+									s += ", ";
+								}
+								s = s + document.form3.language[i].value;  
+					  		}
+				 		}
+				 		alert("You can Speak: "+s);
+								return;
+					}
+		function printCourse(form4){
+						var s = "";
+						for(var i=0; i<document.form4.courses.length; i++){
+							if(document.form4.courses[i].selected){
+								if (s !="") {
+									s += "\n";
+								}
+								s = s+document.form4.courses[i].value;  
+					  		}
+				 		}
+				 		alert("Your Subject at KCGI:\n"+s);
+								return;
+					}
+		function printCountry(form5){
+						for(var i=0; i<document.form5.country.length; i++){
+							if(document.form5.country[i].selected){
+								alert(document.form5.country[i].value);
+								return;
+					  		}
+				 		}
+					}			
+
+		var w = null;
+		//For opening window
+		function openWindow() {
+			w = open("https://www.facebook.com/EveBin", "KCGI", "width= 400px, height= 600px");
+		}
+		//Close the Window
+		function closeWindow(){
+			if (w) {
+				w.close();
+				w = null;
+			}
+		}
+		function changeColor(choosecolor){
+						for(var i=0; i<document.choosecolor.color.length; i++){
+							if(document.choosecolor.color[i].checked){
+								alert(document.choosecolor.color[i].value);
+								return;
+					  		}
+				 		}
+					}
+
+		function showHide() {
+					  var x = document.getElementById("myDIV");
+					  if (x.style.display == "none") {
+					    x.style.display = "block";
+					  } else {
+					    x.style.display = "none";
+					  }
+					}
+
+	</script>
+
+	</body>
+</html>
